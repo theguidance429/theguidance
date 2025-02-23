@@ -1,55 +1,73 @@
 
-     <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Guidance - Lightening Souls and Da’wah Organization</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <img src="logo.png" alt="The Guidance Logo" class="logo">
-        <h1>The Guidance - Lightening Souls and Da’wah Organization</h1>
-        <p>A Non-Profit Da’wah Organization</p>
-    </header>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Our ultimate goal is to earn reward (Sawab) and seek the pleasure of Allah (SWT). We work sincerely not for money, but to spread truth, guidance, and wisdom.</p>
-        <p>May Allah accept our efforts and bless this initiative. 🤲 New members are always welcome to join us!</p>
-    </section>
-    
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>✔ Da’wah (Inviting Others to Islam)</li>
-            <li>✔ Charity & Social Welfare</li>
-            <li>✔ Quiz Competitions</li>
-            <li>✔ Islamic Research & Education</li>
+  import React from "react";
+
+const Home = () => {
+  return (
+    <div className="bg-cover bg-center min-h-screen text-center p-5" style={{ backgroundImage: "url('/assets/background.jpg')" }}>
+      <header className="p-5">
+        <img
+          src="/assets/logo.png"
+          alt="The Guidance Logo"
+          className="mx-auto w-40"
+        />
+        <h1 className="text-4xl font-bold text-gold-600">The Guidance</h1>
+        <p className="text-lg text-white">Lightening Souls and Da’wah Organization</p>
+      </header>
+      <nav className="mt-5 space-x-5">
+        <a href="#about" className="text-white text-lg font-semibold">About</a>
+        <a href="#services" className="text-white text-lg font-semibold">Services</a>
+        <a href="#quiz" className="text-white text-lg font-semibold">Quiz</a>
+        <a href="#contact" className="text-white text-lg font-semibold">Contact</a>
+      </nav>
+      <section id="about" className="mt-10 bg-white bg-opacity-80 p-5 rounded-lg w-3/4 mx-auto">
+        <h2 className="text-3xl font-semibold text-gray-700">About Us</h2>
+        <p className="text-gray-600 mt-4">
+          The Guidance is a non-profit organization dedicated to Da’wah (inviting
+          others to Islam) and charitable work. We welcome newcomers who are eager
+          to contribute, as Da’wah requires a broad and deep understanding of
+          various fields.
+        </p>
+      </section>
+      <section id="services" className="mt-10 bg-white bg-opacity-80 p-5 rounded-lg w-3/4 mx-auto">
+        <h2 className="text-3xl font-semibold text-gray-700">Services</h2>
+        <ul className="text-gray-600 mt-4 text-left list-disc list-inside">
+          <li>Da’wah (Inviting Others to Islam)</li>
+          <li>Charity & Social Welfare</li>
+          <li>Quiz Competitions</li>
+          <li>Islamic Research & Education</li>
         </ul>
-    </section>
-    
-    <section id="branches">
-        <h2>Our Branches</h2>
-        <ul>
-            <li>📖 Qur’an Studies</li>
-            <li>📜 Hadith and Tafseer</li>
-            <li>📚 Comparative Religion</li>
-            <li>🔬 Research-Based Islamic Work</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>📌 Facebook: <a href="https://www.facebook.com/share/18TnVE19a5/">Visit Our Page</a></p>
-        <p>📧 Email: <a href="mailto:theguidance429@gmail.com">theguidance429@gmail.com</a></p>
-        <p>📞 Phone: 01833563161</p>
-        <p>💬 WhatsApp: <a href="https://whatsapp.com/channel/0029VaxCFDgDp2Q7aLvSq830">Join Our Channel</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 The Guidance. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+      </section>
+      <section id="quiz" className="mt-10 bg-white bg-opacity-80 p-5 rounded-lg w-3/4 mx-auto">
+        <h2 className="text-3xl font-semibold text-gray-700">Online Quiz Competition</h2>
+        <img
+          src="/assets/quiz-poster.jpg"
+          alt="Quiz Competition Poster"
+          className="mx-auto w-80 mt-4 border-2 border-gray-300 shadow-lg"
+        />
+        <p className="mt-4 text-lg text-gray-700 font-bold">
+          Register Now: 
+          <a
+            href="https://forms.gle/1kUEzBc8WZ5siLWaA"
+            target="_blank"
+            className="text-blue-600 underline font-semibold"
+          >
+            Click Here to Register
+          </a>
+        </p>
+      </section>
+      <section id="contact" className="mt-10 bg-white bg-opacity-80 p-5 rounded-lg w-3/4 mx-auto">
+        <h2 className="text-3xl font-semibold text-gray-700">Contact Us</h2>
+        <p className="text-gray-600 mt-4">📧 Email: theguidance429@gmail.com</p>
+        <p className="text-gray-600">📞 Phone: 01833563161</p>
+        <p className="text-gray-600">
+          🌐 Website: 
+          <a href="https://www.theguidance.org" className="text-blue-600 underline">
+            www.theguidance.org
+          </a>
+        </p>
+      </section>
+    </div>
+  );
+};
+
+export default Home;v
